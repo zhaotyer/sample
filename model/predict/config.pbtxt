@@ -1,0 +1,22 @@
+name: "predict"
+backend: "python"
+input [
+  {
+    name: "IMAGE_BINARY"
+    data_type: TYPE_STRING
+    dims: [ -1 ]
+  },
+  {
+    name: "IMAGE_DESC"
+    data_type: TYPE_STRING
+    dims: [ -1 ]
+  }
+]
+
+output [
+  {
+    name: "RESULT"
+    data_type: TYPE_STRING
+    dims: [ 1 ]
+  }
+]
